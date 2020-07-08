@@ -232,10 +232,15 @@ public class BrokerController {
     }
 
     public boolean initialize() throws CloneNotSupportedException {
+
+        //加载topic配置文件
         boolean result = this.topicConfigManager.load();
 
+        //
         result = result && this.consumerOffsetManager.load();
+
         result = result && this.subscriptionGroupManager.load();
+
         result = result && this.consumerFilterManager.load();
 
         if (result) {

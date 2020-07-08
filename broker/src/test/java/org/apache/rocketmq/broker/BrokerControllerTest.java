@@ -17,8 +17,6 @@
 
 package org.apache.rocketmq.broker;
 
-import java.io.File;
-
 import org.apache.commons.lang3.time.DateUtils;
 import org.apache.rocketmq.common.BrokerConfig;
 import org.apache.rocketmq.common.MQVersion;
@@ -29,8 +27,9 @@ import org.apache.rocketmq.remoting.protocol.RemotingCommand;
 import org.apache.rocketmq.store.config.FlushDiskType;
 import org.apache.rocketmq.store.config.MessageStoreConfig;
 import org.junit.After;
-import org.junit.Ignore;
 import org.junit.Test;
+
+import java.io.File;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
